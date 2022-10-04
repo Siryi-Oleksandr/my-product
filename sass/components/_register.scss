@@ -1,0 +1,10 @@
+.register {
+  @media screen and (max-width: 1169px) {
+    display: none;
+  }
+
+  margin: 0 24px;
+
+  display: flex;
+  gap: 24px;
+}

@@ -1,0 +1,38 @@
+body {
+  color: $primary-txt-color;
+  font-family: Poppins, Inter, Roboto, Montserrat, sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 30px;
+  width: 100%;
+
+  outline: 1px solid red;
+
+  @media screen and (max-width: 319px) {
+    width: 320px;
+  }
+
+  @media screen and (min-width: 411px) {
+    width: 411px;
+  }
+
+  @media screen and (min-width: 1170px) {
+    width: 1170px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

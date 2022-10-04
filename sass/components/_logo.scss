@@ -1,0 +1,18 @@
+.logo {
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1;
+
+  color: $bolt-txt-color;
+
+  @media screen and (min-width: 1170px) {
+    padding: 21px 0;
+  }
+}
+
+.logo-icon {
+  margin-right: 16px;
+}

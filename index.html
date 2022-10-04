@@ -5,6 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MyProduct</title>
+    <!-- Modern-normalize CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--
@@ -13,28 +23,72 @@
       |============================
     -->
     <header class="header">
-      <a class="logo" href="">
-        <svg class="logo-icon" width="40" height="36">
-          <use href=""></use></svg
-        >Product
-      </a>
-      <nav class="nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="" class="nav__link">Product</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Customers</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
-          <li class="nav__item"><a href="" class="nav__link">Resources</a></li>
+      <div class="container header__flex">
+        <a class="logo" href="./index.html">
+          <img
+            class="logo-icon"
+            src="./images/product/icon-img/logo.png"
+            alt="logo-icon"
+            width="40"
+            height="36"
+          />
+          Product
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item nav__item--current"><a href="" class="nav__link">Product</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Customers</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Pricing</a></li>
+            <li class="nav__item"><a href="" class="nav__link">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="register">
+          <button class="btn" type="button">Sign In</button>
+          <button class="btn btn--green" type="button">Sign Up</button>
         </ul>
-      </nav>
-      <ul class="register">
-        <button class="btn" type="button">Sign In</button>
-        <button class="btn button--green" type="button">Sign Up</button>
-      </ul>
-      <button class="btn-theme" type="button">
-        <svg class="btn-theme__icon" width="32" height="32">
-          <use href=""></use>
-        </svg>
-      </button>
+        <button class="btn-theme" type="button">
+          <svg class="btn-theme__icon" width="32" height="32">
+            <use href="./images/product/icon-img/sprite.svg#theme"></use>
+          </svg>
+        </button>
+        <button
+          class="btn-menu js-open-menu"
+          type="button"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="btn-menu__icon" width="40" height="40">
+            <use href="./images/product/icon-img/sprite.svg#menu-40"></use>
+          </svg>
+        </button>
+      </div>
+
+      <!--
+        |============================
+        | MOBILE MENU
+        |============================
+      -->
+      <div class="menu-container js-menu-container" id="mobile-menu">
+        <button class="btn-menu js-close-menu" type="button">
+          <svg class="btn-menu__icon" width="40" height="40">
+            <use href="./images/product/icon-img/sprite.svg#close-40"></use>
+          </svg>
+        </button>
+        <nav class="mobile-nav">
+          <ul class="mobile-nav__list">
+            <li class="mobile-nav__item mobile-nav__item--current">
+              <a href="" class="mobile-nav__link">Product</a>
+            </li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Customers</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Pricing</a></li>
+            <li class="mobile-nav__item"><a href="" class="mobile-nav__link">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="mobile-register">
+          <button class="btn" type="button">Sign In</button>
+          <button class="btn btn--green" type="button">Sign Up</button>
+        </ul>
+      </div>
     </header>
 
     <main>
@@ -410,7 +464,7 @@
     -->
 
     <footer class="footer">
-      <div class="contaner">
+      <div class="container">
         <div class="social">
           <a class="logo" href="">
             <svg class="logo-icon" width="40" height="36">
@@ -472,5 +526,17 @@
         <p class="footer__text">Made With Love By Figmaland All Right Reserved</p>
       </div>
     </footer>
+    <!--
+  |============================
+  | JS
+  |============================
+-->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
