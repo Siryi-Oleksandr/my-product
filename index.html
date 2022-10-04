@@ -97,8 +97,8 @@
       | HERO
       |============================
     -->
-      <section class="hero">
-        <div class="container">
+      <section class="hero section">
+        <div class="container hero__flex">
           <div class="hero__group">
             <h1 class="hero__title">Work at the speed of thought</h1>
             <p class="hero__text">
@@ -110,7 +110,18 @@
               <button class="btn-video" type="button">Watch the Video</button>
             </ul>
           </div>
-          <img src="" alt="people are using devices" class="hero__img" width="600" height="555" />
+          <img
+            class="hero__img"
+            srcset="
+              ./images/product/content-img/hero-sm-@1x.png  338w,
+              ./images/product/content-img/hero-lg-@1x.png  600w,
+              ./images/product/content-img/hero-sm-@2x.png  676w,
+              ./images/product/content-img/hero-lg-@2x.png 1200w
+            "
+            src="./images/product/content-img/hero-sm-@1x.png"
+            sizes="(min-width: 1170px) 600px, (min-width: 411px) 338px, 100vw"
+            alt="people are using devices"
+          />
         </div>
       </section>
       <!--
@@ -118,7 +129,7 @@
       | FEATURES
       |============================
     -->
-      <section class="features">
+      <section class="features section">
         <div class="container">
           <h2 class="features__title section-title">Product was Built Specifically for You</h2>
           <ul class="features__list">
@@ -151,7 +162,7 @@
       | MANAGMENT
       |============================
     -->
-      <secction class="managment">
+      <secction class="managment section">
         <div class="container">
           <div class="managment__group">
             <p class="managment__uppertitle section-uppertitle">Effortless Validation for</p>
@@ -180,7 +191,7 @@
       | CUSTOMER SUPPORT
       |============================
     -->
-      <secction class="support">
+      <secction class="support section">
         <div class="container">
           <img class="support__img" src="" alt="laptop" width="543" height="500" />
           <div class="support__group">
@@ -209,7 +220,7 @@
       | COLLABORATIVE
       |============================
     -->
-      <secction class="collaborative">
+      <secction class="collaborative section">
         <div class="container">
           <div class="collaborative__group">
             <p class="collaborative__uppertitle section-uppertitle">Optimisation for</p>
@@ -244,7 +255,7 @@
       | OUR TEAM
       |============================
     -->
-      <section class="team">
+      <section class="team section">
         <div class="container">
           <h2 class="team__title section-title">Product was Built Specifically for You</h2>
           <p class="team__text page-text page-text--subtitle">
@@ -277,7 +288,7 @@
       | OUR STRATEGIES
       |============================
     -->
-      <section class="strategies">
+      <section class="strategies section">
         <div class="container">
           <h2 class="strategies__title section-title">Contents Strategies</h2>
           <p class="strategies__text page-text page-text--subtitle">
@@ -321,7 +332,7 @@
       | PRICE TABLE
       |============================
     -->
-      <section class="price">
+      <section class="price section">
         <div class="container">
           <h2 class="price__title section-title">Price Table</h2>
           <p class="price__text">We offer competitive price</p>
@@ -380,7 +391,7 @@
       | REVIEWS
       |============================
     -->
-      <section class="reviews">
+      <section class="reviews section">
         <div class="container">
           <h2 class="reviews__title section-title">What Clients Say</h2>
           <p class="reviews__text">

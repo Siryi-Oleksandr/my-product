@@ -18,7 +18,29 @@
   border: transparent;
 }
 
+.btn-video {
+  padding-left: 0;
+  padding-right: 0;
+  display: flex;
+  gap: 8px;
+
+  @extend %btn;
+  color: $btn-color;
+  text-decoration: underline;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background-image: url(../../images/product/icon-img/play.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .btn-menu {
+  display: block;
   margin-left: auto;
   background-color: transparent;
   border: transparent;

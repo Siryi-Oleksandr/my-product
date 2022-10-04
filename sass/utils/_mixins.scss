@@ -1,5 +1,4 @@
-@mixin font-source($size: false, $lh: false, $weight: false, $color: false) {
-  font-family: 'Poppins', Inter, Roboto, Montserrat, sans-serif;
+@mixin font-source($size: false, $lh: false, $weight: false) {
   @if $size {
     font-size: $size;
   }
@@ -9,7 +8,9 @@
   @if $weight {
     font-weight: $weight;
   }
-  @if $color {
-    color: $colour;
-  }
+}
+
+@mixin section-padding($pt: 50px, $pb: 50px) {
+  padding-top: $pt;
+  padding-bottom: $pb;
 }
