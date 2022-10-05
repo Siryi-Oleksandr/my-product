@@ -1,5 +1,6 @@
 .btn {
   @extend %btn;
+  display: block;
   color: $bolt-txt-color;
   border: 1px solid #bcd0e5;
 }

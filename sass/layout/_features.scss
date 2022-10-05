@@ -1,0 +1,111 @@
+// .features {
+
+// }
+
+.features--shadow {
+  position: relative;
+  padding-bottom: 38px;
+
+  @media screen and (min-width: $lg) {
+    padding-bottom: 90px;
+  }
+  overflow: hidden;
+}
+
+.features__title {
+  margin-bottom: 50px;
+
+  @media screen and (min-width: $lg) {
+    width: 535px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 58px;
+  }
+}
+
+.features__list {
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+    gap: 46px;
+
+    margin-bottom: 34px;
+  }
+}
+
+.features__item {
+  margin-bottom: 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 240px;
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    text-align: left;
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: '';
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    display: block;
+    width: 50px;
+    height: 50px;
+
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @media screen and (min-width: $lg) {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+  &:nth-child(1)::before {
+    background-image: url(../../images/product/icon-img/features-icon-1.png);
+  }
+  &:nth-child(2)::before {
+    background-image: url(../../images/product/icon-img/features-icon-2.png);
+  }
+  &:nth-child(3)::before {
+    background-image: url(../../images/product/icon-img/features-icon-3.png);
+  }
+  &:nth-child(4)::before {
+    background-image: url(../../images/product/icon-img/features-icon-4.png);
+  }
+}
+
+.features__subtitle {
+  margin-bottom: 8px;
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    text-align: left;
+  }
+}
+
+// .features__text {
+// }
+// .page-text {
+// }
+
+.wrapper-shadow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: -10;
+  width: 411px;
+  height: 201px;
+  background-image: url(../images/product/icon-img/Bg.png);
+
+  @media screen and (min-width: $lg) {
+    bottom: 0;
+    right: -115px;
+
+    width: 1400px;
+    height: 389px;
+    background-image: url(../../images/product/icon-img/Bg.svg);
+  }
+}

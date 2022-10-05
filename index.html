@@ -130,7 +130,7 @@
       |============================
     -->
       <section class="features section">
-        <div class="container">
+        <div class="container features--shadow">
           <h2 class="features__title section-title">Product was Built Specifically for You</h2>
           <ul class="features__list">
             <li class="features__item">
@@ -154,7 +154,8 @@
               </p>
             </li>
           </ul>
-          <button class="btn btn--green" type="button">SIGN UP NOW</button>
+          <button class="btn btn--green center" type="button">SIGN UP NOW</button>
+          <div class="wrapper-shadow"></div>
         </div>
       </section>
       <!--
@@ -162,8 +163,8 @@
       | MANAGMENT
       |============================
     -->
-      <secction class="managment section">
-        <div class="container">
+      <section class="section managment">
+        <div class="container managment__flex">
           <div class="managment__group">
             <p class="managment__uppertitle section-uppertitle">Effortless Validation for</p>
             <h2 class="managment__tittle section-title">Management</h2>
@@ -171,29 +172,52 @@
               The Myspace page defines the individual, his or her characteristics, traits, personal
               choices and the overall personality of the person.
             </p>
-            <h3 class="managment__subtitle section-subtitle">Accessory makers</h3>
+            <h3 class="managment__subtitle">Accessory makers</h3>
             <p class="managment__text page-text">
               While most people enjoy casino gambling, sports betting, lottery and bingo playing for
               the fun.
             </p>
 
-            <h3 class="managment__subtitle section-subtitle">Alterationists</h3>
+            <h3 class="managment__subtitle">Alterationists</h3>
             <p class="managment__text page-text">
               If you are looking for a new way to promote your business that won’t cost you more
               money.
             </p>
           </div>
-          <img class="managment__img" src="" alt="documents" width="540" height="474" />
+          <img
+            class="managment__img"
+            srcset="
+              ./images/product/content-img/management-sm-@1x.png  349w,
+              ./images/product/content-img/management-lg-@1x.png  540w,
+              ./images/product/content-img/management-sm-@2x.png  698w,
+              ./images/product/content-img/management-lg-@2x.png 1080w
+            "
+            src="./images/product/content-img/management-sm-@1x.png"
+            sizes="(min-width: 1170px) 540px, (min-width: 411px) 349px, 100vw"
+            alt="documents"
+          />
         </div>
-      </secction>
+      </section>
       <!--
       |============================
       | CUSTOMER SUPPORT
       |============================
     -->
-      <secction class="support section">
-        <div class="container">
-          <img class="support__img" src="" alt="laptop" width="543" height="500" />
+
+      <section class="section support">
+        <div class="container support__flex">
+          <img
+            class="support__img"
+            srcset="
+              ./images/product/content-img/support-sm-@1x.png  350w,
+              ./images/product/content-img/support-lg-@1x.png  543w,
+              ./images/product/content-img/support-sm-@2x.png  700w,
+              ./images/product/content-img/support-lg-@2x.png 1086w
+            "
+            src="./images/product/content-img/support-sm-@1x.png"
+            sizes="(min-width: 1170px) 543px, (min-width: 411px) 350px, 100vw"
+            alt="laptop"
+          />
           <div class="support__group">
             <p class="support__uppertitle section-uppertitle">Easier decision making for</p>
             <h2 class="support__tittle section-title">Customer Support</h2>
@@ -213,15 +237,16 @@
             </p>
           </div>
         </div>
-      </secction>
+      </section>
 
       <!--
       |============================
       | COLLABORATIVE
       |============================
     -->
-      <secction class="collaborative section">
-        <div class="container">
+
+      <section class="section collaborative">
+        <div class="container collaborative__flex">
           <div class="collaborative__group">
             <p class="collaborative__uppertitle section-uppertitle">Optimisation for</p>
             <h2 class="collaborative__tittle section-title">Collaborative</h2>
@@ -243,13 +268,18 @@
           </div>
           <img
             class="collaborative__img"
-            src=""
+            srcset="
+              ./images/product/content-img/collaborative-sm-@1x.png  350w,
+              ./images/product/content-img/collaborative-lg-@1x.png  542w,
+              ./images/product/content-img/collaborative-sm-@2x.png  700w,
+              ./images/product/content-img/collaborative-lg-@2x.png 1084w
+            "
+            src="./images/product/content-img/collaborative-sm-@1x.png"
+            sizes="(min-width: 1170px) 542px, (min-width: 411px) 350px, 100vw"
             alt="folder with images"
-            width="542"
-            height="451"
           />
         </div>
-      </secction>
+      </section>
       <!--
       |============================
       | OUR TEAM

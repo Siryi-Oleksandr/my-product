@@ -1,0 +1,4 @@
+.section-title {
+  @include font-source(32px, calc(48 / 32), 700);
+  text-align: center;
+}

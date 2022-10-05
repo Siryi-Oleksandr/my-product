@@ -1,0 +1,36 @@
+// .collaborative {
+// }
+
+.collaborative__flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+
+  @media screen and (min-width: $lg) {
+    flex-direction: row;
+    align-items: center;
+    gap: 84px;
+  }
+}
+// .collaborative__group {
+// }
+.collaborative__uppertitle {
+  margin-bottom: 8px;
+}
+
+.collaborative__tittle {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.collaborative__text {
+  margin-bottom: 16px;
+}
+
+.collaborative__subtitle {
+  margin-bottom: 12px;
+  @include font-source(16px, calc(26 / 16), 600);
+}
+
+// .collaborative__img {
+// }

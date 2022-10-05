@@ -16,3 +16,17 @@
   align-items: center;
   justify-content: center;
 }
+
+%icon-check {
+  content: '';
+  display: block;
+  width: 35px;
+  height: 35px;
+  flex-shrink: 0;
+
+  border-radius: 13.85px;
+
+  background-image: url(../../images/product/icon-img/tick.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}

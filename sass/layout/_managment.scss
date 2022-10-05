@@ -1,0 +1,35 @@
+// .managment {
+// }
+
+.managment__flex {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 50px;
+
+  @media screen and (min-width: $lg) {
+    flex-direction: row;
+    align-items: center;
+    gap: 84px;
+  }
+}
+
+// .managment__group {
+//   }
+
+.managment__uppertitle {
+  margin-bottom: 8px;
+}
+
+.managment__tittle {
+  text-align: left;
+  margin-bottom: 16px;
+}
+
+.managment__text {
+  margin-bottom: 16px;
+}
+
+.managment__subtitle {
+  margin-bottom: 12px;
+  @include font-source(16px, calc(26 / 16), 600);
+}
