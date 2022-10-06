@@ -1,15 +1,13 @@
-// .features {
-
-// }
-
-.features--shadow {
-  position: relative;
+.features {
   padding-bottom: 38px;
+  background-image: url(../../images/product/icon-img/bg-sm.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
   @media screen and (min-width: $lg) {
     padding-bottom: 90px;
+    background-image: url(../../images/product/icon-img/bg-lg.svg);
   }
-  overflow: hidden;
 }
 
 .features__title {
@@ -91,21 +89,21 @@
 // .page-text {
 // }
 
-.wrapper-shadow {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  z-index: -10;
-  width: 411px;
-  height: 201px;
-  background-image: url(../images/product/icon-img/Bg.png);
+// .wrapper-shadow {
+//   position: absolute;
+//   bottom: 0;
+//   right: 0;
+//   z-index: -10;
+//   width: 411px;
+//   height: 201px;
+//   background-image: url(../images/product/icon-img/Bg.png);
 
-  @media screen and (min-width: $lg) {
-    bottom: 0;
-    right: -115px;
+//   @media screen and (min-width: $lg) {
+//     bottom: 0;
+//     right: -115px;
 
-    width: 1400px;
-    height: 389px;
-    background-image: url(../../images/product/icon-img/Bg.svg);
-  }
-}
+//     width: 1400px;
+//     height: 389px;
+//     background-image: url(../../images/product/icon-img/Bg.svg);
+//   }
+// }
