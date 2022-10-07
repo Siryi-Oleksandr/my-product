@@ -1,12 +1,12 @@
 .features {
   padding-bottom: 38px;
-  background-image: url(../../images/product/icon-img/bg-sm.svg);
+  background-image: url(../images/product/icon-img/bg-sm.svg);
   background-repeat: no-repeat;
   background-position: 50% 100%;
 
   @media screen and (min-width: $lg) {
     padding-bottom: 90px;
-    background-image: url(../../images/product/icon-img/bg-lg.svg);
+    background-image: url(../images/product/icon-img/bg-lg.svg);
   }
 }
 
@@ -62,16 +62,16 @@
     }
   }
   &:nth-child(1)::before {
-    background-image: url(../../images/product/icon-img/features-icon-1.png);
+    background-image: url(../images/product/icon-img/features-icon-1.png);
   }
   &:nth-child(2)::before {
-    background-image: url(../../images/product/icon-img/features-icon-2.png);
+    background-image: url(../images/product/icon-img/features-icon-2.png);
   }
   &:nth-child(3)::before {
-    background-image: url(../../images/product/icon-img/features-icon-3.png);
+    background-image: url(../images/product/icon-img/features-icon-3.png);
   }
   &:nth-child(4)::before {
-    background-image: url(../../images/product/icon-img/features-icon-4.png);
+    background-image: url(../images/product/icon-img/features-icon-4.png);
   }
 }
 
@@ -104,6 +104,6 @@
 
 //     width: 1400px;
 //     height: 389px;
-//     background-image: url(../../images/product/icon-img/Bg.svg);
+//     background-image: url(../images/product/icon-img/Bg.svg);
 //   }
 // }

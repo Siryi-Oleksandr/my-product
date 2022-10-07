@@ -57,7 +57,7 @@
     display: block;
     width: 20px;
     height: 18px;
-    background-image: url(../../images/product/icon-img/play.png);
+    background-image: url(../images/product/icon-img/play.png);
     background-repeat: no-repeat;
     background-size: contain;
   }
@@ -76,5 +76,16 @@
 
   .btn-menu__icon {
     fill: $primary-txt-color;
+  }
+}
+
+.btn--footer {
+  @extend %btn;
+  color: $white-txt-color;
+  background-color: $btn-color;
+
+  @media screen and (max-width: 1169px) {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

@@ -1,0 +1,49 @@
+.footer__flex {
+  @media screen and (min-width: $lg) {
+    display: flex;
+    align-items: baseline;
+  }
+}
+
+.resource__list {
+  @media screen and (max-width: 1169px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $lg) {
+    margin-right: 129px;
+  }
+}
+
+.license__list {
+  @media screen and (max-width: 1169px) {
+    margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $lg) {
+    margin-right: 82px;
+  }
+}
+
+.resource__item,
+.license__item {
+  @include font-source(16px, calc(35 / 16), 400);
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    text-align: left;
+  }
+}
+
+.resource__link--active,
+.license__link--active {
+  @include font-source(20px, calc(30 / 20), 500);
+}
+
+.footer__text {
+  @include font-source(14px, calc(30 / 15));
+  text-align: center;
+}
+
+// .license__link {
+// }
