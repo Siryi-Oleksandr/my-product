@@ -1,0 +1,45 @@
+.article {
+  padding: 17px 21px;
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 371px;
+  background-color: $accent-color;
+  border-radius: 32px;
+
+  @media screen and (min-width: $lg) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 968px;
+  }
+}
+
+.article__wrapper {
+  @media screen and (min-width: $lg) {
+    padding: 25px;
+
+    flex-grow: 1;
+  }
+}
+
+.article__title {
+  margin-bottom: 70px;
+  min-width: 328px;
+  @include font-source(32px, calc(48 / 32), 600);
+  text-align: center;
+  color: $white-txt-color;
+
+  @media screen and (min-width: $lg) {
+    text-align: left;
+  }
+}
+
+.article__img {
+  margin-top: 32px;
+}
+
+.left {
+  margin-right: auto;
+  margin-left: 0;
+}

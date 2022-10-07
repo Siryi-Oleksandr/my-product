@@ -1,0 +1,118 @@
+// .price {
+// }
+
+// .price__flex {
+// }
+// .price__title {
+// }
+
+.price__text {
+  margin-bottom: 74px;
+
+  @include font-source(16px, calc(24 / 16), 500);
+  text-align: center;
+}
+
+.price__list {
+  @media screen and (min-width: $lg) {
+    display: flex;
+    justify-content: center;
+    gap: 71px;
+  }
+}
+
+.price__item {
+  padding: 32px 70px;
+  text-align: center;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  border-radius: 8px;
+
+  &:not(:last-child) {
+    @media screen and (max-width: 1169px) {
+      margin-bottom: 32px;
+    }
+  }
+
+  transition: background-color 250ms ease-in-out;
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+}
+// .card {
+// }
+.card__title {
+  margin-bottom: 8px;
+
+  @include font-source(24px, calc(40 / 24), 700);
+
+  transition: color $amimation;
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $white-txt-color;
+  }
+}
+.card__desc {
+  margin-bottom: 16px;
+
+  @include font-source(16px, calc(40 / 16));
+
+  transition: color $amimation;
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $white-txt-color;
+  }
+}
+.card__price {
+  position: relative;
+
+  margin-bottom: 16px;
+
+  @include font-source(76px, calc(100 / 76), 700);
+  color: $accent-color;
+
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $white-txt-color;
+  }
+}
+.card__currency {
+  position: absolute;
+  top: 25%;
+  left: 45%;
+
+  @include font-source(24px, calc(30 / 24));
+  font-family: 'Inter';
+
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $white-txt-color;
+  }
+}
+.card__period {
+  @include font-source(16px, calc(19 / 16), 400);
+  letter-spacing: 0.1px;
+  color: $disabled-color;
+
+  .price__item:focus &,
+  .price__item:hover & {
+    color: #e0e0e0;
+  }
+}
+.card__list {
+  margin-bottom: 38px;
+}
+.card__item {
+  font-family: 'Inter';
+  @include font-source(16px, calc(22 / 16), 500);
+  letter-spacing: 0.2px;
+
+  &:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $white-txt-color;
+  }
+}

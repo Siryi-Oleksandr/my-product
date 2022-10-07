@@ -11,6 +11,29 @@
   background-color: $btn-color;
 }
 
+.btn--white {
+  @extend %btn;
+  padding: 10px 35px;
+  color: $accent-color;
+  background-color: $white-txt-color;
+  font-size: 20px;
+  line-height: calc(30 / 20);
+
+  @media screen and (max-width: 1169px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.btn--active {
+  transition: color $amimation, background-color $amimation;
+  .price__item:focus &,
+  .price__item:hover & {
+    color: $btn-color;
+    background-color: $white-txt-color;
+  }
+}
+
 .btn-theme {
   @media screen and (max-width: 1169px) {
     display: none;

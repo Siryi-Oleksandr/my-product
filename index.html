@@ -447,7 +447,7 @@
       |============================
     -->
       <section class="price section">
-        <div class="container">
+        <div class="container price__flex">
           <h2 class="price__title section-title">Price Table</h2>
           <p class="price__text">We offer competitive price</p>
           <ul class="price__list">
@@ -463,23 +463,23 @@
                   <li class="card__item">Notifications</li>
                   <li class="card__item">Landing Pages</li>
                 </ul>
-                <button class="btn btn--green" type="button">Order Now</button>
+                <button class="btn btn--green btn--active center" type="button">Order Now</button>
               </div>
             </li>
             <li class="price__item">
               <div class="card">
                 <h3 class="card__title card__title--active">Standard</h3>
                 <p class="card__desc card__desc--active">Brief price description</p>
-                <p class="card__price card__price--active">
-                  5 <sup class="card__currency card__currency--active">$</sup>
-                  <sub>Per / month</sub>
+                <p class="card__price">
+                  5 <sup class="card__currency">$</sup>
+                  <sub class="card__period">Per / month</sub>
                 </p>
                 <ul class="card__list">
-                  <li class="card__item card__item--active">5+ Operators</li>
-                  <li class="card__item card__item--active">Notifications</li>
-                  <li class="card__item card__item--active">Landing Pages</li>
+                  <li class="card__item">5+ Operators</li>
+                  <li class="card__item">Notifications</li>
+                  <li class="card__item">Landing Pages</li>
                 </ul>
-                <button class="btn btn--white" type="button">Order Now</button>
+                <button class="btn btn--green btn--active center" type="button">Order Now</button>
               </div>
             </li>
             <li class="price__item">
@@ -494,7 +494,7 @@
                   <li class="card__item">Notifications</li>
                   <li class="card__item">Landing Pages</li>
                 </ul>
-                <button class="btn btn--green" type="button">Order Now</button>
+                <button class="btn btn--green btn--active center" type="button">Order Now</button>
               </div>
             </li>
           </ul>
@@ -515,12 +515,17 @@
           <ul class="reviews__list">
             <li class="reviews__item">
               <div class="reviews__card">
-                <p class="reviews__text">
+                <p class="reviews__card-text">
                   Product helps you see how many more days you need to work to reach your financial
                   goal.
                 </p>
                 <div class="reviews__wrapper">
-                  <img src="" alt="reviews" class="reviews__img" width="50" height="50" />
+                  <img 
+                  srcset="
+                  ./images/product/content-img/reviews-1@1x.png 1x,
+                  ./images/product/content-img/reviews-1@2x.png 2x
+                "
+                  src="./images/product/content-img/reviews-1@1x.png" alt="reviews" class="reviews__img" width="50" height="50" />
                   <div class="reviews__group">
                     <p class="reviews__name">Wahid Ari</p>
                     <p class="reviews__position">Designer</p>
@@ -530,30 +535,40 @@
             </li>
             <li class="reviews__item">
               <div class="reviews__card">
-                <p class="reviews__text">
+                <p class="reviews__card-text">
                   Product helps you see how many more days you need to work to reach your financial
                   goal.
                 </p>
                 <div class="reviews__wrapper">
-                  <img src="" alt="reviews" class="reviews__img" width="50" height="50" />
+                  <img 
+                  srcset="
+                  ./images/product/content-img/reviews-2@1x.png 1x,
+                  ./images/product/content-img/reviews-2@2x.png 2x
+                "
+                  src="./images/product/content-img/reviews-2@1x.png" alt="reviews" class="reviews__img" width="50" height="50" />
                   <div class="reviews__group">
                     <p class="reviews__name">Wahid Ari</p>
-                    <p class="reviews__position">Designer</p>
+                    <p class="reviews__position">FrontEnd</p>
                   </div>
                 </div>
               </div>
             </li>
             <li class="reviews__item">
               <div class="reviews__card">
-                <p class="reviews__text">
+                <p class="reviews__card-text">
                   Product helps you see how many more days you need to work to reach your financial
                   goal.
                 </p>
                 <div class="reviews__wrapper">
-                  <img src="" alt="reviews" class="reviews__img" width="50" height="50" />
+                  <img 
+                  srcset="
+                  ./images/product/content-img/reviews-3@1x.png 1x,
+                  ./images/product/content-img/reviews-3@2x.png 2x
+                "
+                  src="./images/product/content-img/reviews-3@1x.png" alt="reviews" class="reviews__img" width="50" height="50" />
                   <div class="reviews__group">
                     <p class="reviews__name">Wahid Ari</p>
-                    <p class="reviews__position">Designer</p>
+                    <p class="reviews__position">Analys</p>
                   </div>
                 </div>
               </div>
@@ -566,20 +581,28 @@
       | ARTICLE
       |============================
     -->
+    
+    <div class="section">
       <article class="article">
-        <div class="article__wrapper">
+          <div class="article__wrapper">
           <h2 class="article__title">Join 100 Compannies who boost their business with Product</h2>
           <button class="btn btn--white" type="button">Get This</button>
         </div>
         <img
-          class="article__img"
-          src=""
-          alt="product"
-          class="article__img"
-          width="351"
-          height="331"
-        />
+            class="article__img"
+            srcset="
+              ./images/product/content-img/article@1x.png  1x,
+              ./images/product/content-img/article@2x.png  2x
+            "
+            src="./images/product/content-img/article@1x.png"
+            width="351"
+            height="331"
+            alt="product"
+          />
+        
       </article>
+    </div>
+     
     </main>
 
     <!--
@@ -588,33 +611,38 @@
       |============================
     -->
 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container">
         <div class="social">
-          <a class="logo" href="">
-            <svg class="logo-icon" width="40" height="36">
-              <use href=""></use></svg
-            >Product
-          </a>
+          <a class="logo logo--footer" href="./index.html">
+          <img
+            class="logo-icon"
+            src="./images/product/icon-img/logo.png"
+            alt="logo-icon"
+            width="40"
+            height="36"
+          />
+          Product
+        </a>
           <ul class="social__list">
             <li class="social__item">
               <a class="social__link" href="">
-                <svg class="social__icon" width="40" height="40">
-                  <use href=""></use>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="./images/product/icon-img/sprite.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="">
-                <svg class="social__icon" width="40" height="40">
-                  <use href=""></use>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="./images/product/icon-img/sprite.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link" href="">
-                <svg class="social__icon" width="40" height="40">
-                  <use href=""></use>
+                <svg class="social__icon" width="24" height="24">
+                  <use href="./images/product/icon-img/sprite.svg#twitter"></use>
                 </svg>
               </a>
             </li>
