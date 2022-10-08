@@ -939,10 +939,6 @@ body {
   transition: box-shadow 250ms ease-in-out;
   transition: box-shadow 250ms ease-in-out, -webkit-box-shadow 250ms ease-in-out;
 }
-.strategies__item:hover, .strategies__item:focus {
-  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-}
 
 @media screen and (max-width: 1169px) {
   .strategies__img {
@@ -980,10 +976,6 @@ body {
 @media screen and (min-width: 1170px) {
   .srtategies__wrapper {
     padding: 24px;
-    border-right: 1px solid #dedede;
-    border-left: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    border-radius: 8px;
   }
 }
 
@@ -1396,4 +1388,27 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.slider-block {
+  display: block;
+}
+@media screen and (min-width: 1170px) {
+  .slider-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.btn-slider {
+  border: none;
+  cursor: pointer;
+}
+.btn-slider:hover, .btn-slider:focus {
+  fill: #02897a;
 }/*# sourceMappingURL=main.css.map */

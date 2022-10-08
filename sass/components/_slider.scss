@@ -1,0 +1,20 @@
+.slider-block {
+  display: block;
+  @media screen and (min-width: $lg) {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+  }
+}
+.btn-slider {
+  border: none;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+  }
+}
+.btn-slider__left {
+}
+.btn-slider__right {
+}

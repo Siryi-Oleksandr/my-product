@@ -28,10 +28,10 @@
   margin-bottom: 56px;
   transition: box-shadow $amimation;
 
-  &:hover,
-  &:focus {
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  }
+  // &:hover,
+  // &:focus {
+  //   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  // }
 }
 
 // .strategies__link {
@@ -72,9 +72,9 @@
   @media screen and (min-width: $lg) {
     padding: 24px;
 
-    border-right: 1px solid #dedede;
-    border-left: 1px solid #dedede;
-    border-bottom: 1px solid #dedede;
-    border-radius: 8px;
+    // border-right: 1px solid #dedede;
+    // border-left: 1px solid #dedede;
+    // border-bottom: 1px solid #dedede;
+    // border-radius: 8px;
   }
 }
