@@ -119,6 +119,7 @@ img {
   border: 1px solid transparent;
   border-radius: 8px;
   background-color: transparent;
+  cursor: pointer;
 }
 
 .nav__list {
@@ -249,6 +250,7 @@ body {
 .btn-theme {
   border-radius: 50%;
   border: transparent;
+  cursor: pointer;
 }
 @media screen and (max-width: 1169px) {
   .btn-theme {
@@ -282,6 +284,7 @@ body {
   background-color: transparent;
   border: transparent;
   background-color: transparent;
+  cursor: pointer;
 }
 @media screen and (min-width: 1170px) {
   .btn-menu {
@@ -931,6 +934,14 @@ body {
 
 .strategies__item {
   margin-bottom: 56px;
+  -webkit-transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: -webkit-box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out;
+  transition: box-shadow 250ms ease-in-out, -webkit-box-shadow 250ms ease-in-out;
+}
+.strategies__item:hover, .strategies__item:focus {
+  -webkit-box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+          box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media screen and (max-width: 1169px) {

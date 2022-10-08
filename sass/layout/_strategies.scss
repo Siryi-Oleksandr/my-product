@@ -26,9 +26,17 @@
 
 .strategies__item {
   margin-bottom: 56px;
+  transition: box-shadow $amimation;
+
+  &:hover,
+  &:focus {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 }
+
 // .strategies__link {
 // }
+
 .strategies__img {
   @media screen and (max-width: 1169px) {
     margin-bottom: 24px;

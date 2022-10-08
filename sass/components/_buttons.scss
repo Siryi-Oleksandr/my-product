@@ -40,6 +40,7 @@
   }
   border-radius: 50%;
   border: transparent;
+  cursor: pointer;
 }
 
 .btn-video {
@@ -69,7 +70,7 @@
   background-color: transparent;
   border: transparent;
   background-color: transparent;
-  // fill: currentColor;
+  cursor: pointer;
   @media screen and (min-width: 1170px) {
     display: none;
   }
